@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Data Visualization</h1>
+        </div>
+        
+        <div class="content">
+            <div class="card data-ranking">
+                <h2>Data Ranking List</h2>
+                <canvas id="rankingChart"></canvas>
+            </div>
+            
+            <div class="card data-distribution">
+                <h2>Data Distribution</h2>
+                <p class="main-metric">12,962,731 <span>Times</span></p>
+            </div>
+            
+            <div class="card data-acceptance">
+                <h2>Data Acceptance</h2>
+                <p class="main-metric">58,802</p>
+            </div>
+            
+            <div class="card type-of-data">
+                <h2>Type of Data</h2>
+                <canvas id="typeOfDataChart"></canvas>
+            </div>
+            
+            <div class="card data-analysis">
+                <h2>Data Analysis</h2>
+                <canvas id="analysisPieChart"></canvas>
+            </div>
+            
+            <div class="card data-comparison">
+                <h2>Data Comparison</h2>
+                <canvas id="comparisonChart"></canvas>
+            </div>
+            
+            <div class="card data-distribution-shape">
+                <h2>Data Distribution</h2>
+                <canvas id="distributionRadarChart"></canvas>
+            </div>
+            
+            <div class="table-section">
+                <h2>Data Table</h2>
+                <table>
+                    <tr>
+                        <th>Time</th><th>Name</th><th>Number</th><th>Address</th>
+                    </tr>
+                    <tr>
+                        <td>01-02 10:54</td><td>Mark Perez</td><td>123-45-6780</td><td>123 Street, City</td>
+                    </tr>
+                    <tr>
+                        <td>01-02 11:04</td><td>Elisa Ramuaga</td><td>987-65-4321</td><td>456 Lane, Town</td>
+                    </tr>
+                    <tr>
+                        <td>01-02 12:24</td><td>Chris Brown</td><td>555-55-5555</td><td>789 Blvd, Area</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
